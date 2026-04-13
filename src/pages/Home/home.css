@@ -5,3 +5,9 @@
 .home-panel {
   scroll-snap-align: start;
 }
+
+@media (max-width: 768px) {
+  .home-wrapper {
+    scroll-snap-type: y proximity;
+  }
+}
