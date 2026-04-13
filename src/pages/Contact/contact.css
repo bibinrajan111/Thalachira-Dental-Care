@@ -1,0 +1,35 @@
+.contact-bg {
+  background: linear-gradient(180deg, #ffffff 0%, #e8f5ff 100%);
+}
+
+.contact-info {
+  border: 1px solid #b7e3ff;
+  background-color: #ffffff;
+  animation: slideLeft 0.8s ease;
+}
+
+.contact-form {
+  animation: slideRight 0.8s ease;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

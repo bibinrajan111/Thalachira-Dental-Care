@@ -1,0 +1,28 @@
+.services-title {
+  animation: tiltIn 0.8s ease;
+}
+
+.service-item {
+  border: 1px solid #b7e3ff;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-8px) rotate(-0.3deg);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.15);
+}
+
+@keyframes tiltIn {
+  0% {
+    opacity: 0;
+    transform: rotateX(20deg) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0px);
+  }
+}
