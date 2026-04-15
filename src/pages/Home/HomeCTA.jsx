@@ -4,7 +4,7 @@ import RevealOnScroll from '../../components/RevealOnScroll';
 
 function HomeCTA() {
   return (
-    <section className="home-panel flex min-h-[calc(100vh-6rem)] items-center bg-gradient-to-br from-dentalInk via-dentalAccent to-[#a4b5c2]" id="home-cta">
+    <section className="home-panel flex min-h-[calc(100vh-6rem)] items-center bg-gradient-to-br from-dentalInk via-dentalAccent to-[#19c53a]" id="home-cta">
       <div className="page-shell py-12">
         <RevealOnScroll>
           <div className="rounded-[2rem] border border-white/30 bg-white/12 p-8 text-white shadow-soft backdrop-blur md:p-14">

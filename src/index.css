@@ -16,11 +16,16 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top right, #d6e1ea 0%, #f6fafd 30%, #ffffff 100%);
-  color: #1f2d3d;
+  background: radial-gradient(circle at top right, #daf3e0 0%, #f5fff6 35%, #ffffff 100%);
+  color: #0f2f17;
+}
+
+p,
+li {
+  line-height: 1.65;
 }
 
 ::selection {
-  background: #b3c3d0;
-  color: #1f2d3d;
+  background: #12ad2b;
+  color: #ffffff;
 }

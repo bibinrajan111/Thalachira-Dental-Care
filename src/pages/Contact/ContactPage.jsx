@@ -58,7 +58,7 @@ function ContactPage() {
       <div className="page-shell grid gap-8 lg:grid-cols-2">
         <RevealOnScroll>
           <section className="contact-info rounded-[1.6rem] p-8">
-            <Chip label="Let’s Connect" sx={{ bgcolor: '#dbe4ec', color: '#1f2d3d', fontWeight: 600, mb: 2 }} />
+            <Chip label="Let’s Connect" sx={{ bgcolor: '#daf3e0', color: '#0f2f17', fontWeight: 600, mb: 2 }} />
             <h1 className="mb-4 text-3xl font-bold md:text-5xl">Plan Your Visit with a Digital-First Dental Team</h1>
             <p className="mb-6 text-dentalInk/75">
               Share your concern and preferred time slot. Our care coordinator will guide you through consultation, diagnostics, and treatment planning.
@@ -102,7 +102,7 @@ function ContactPage() {
                 fullWidth
                 required
               />
-              <Button type="submit" variant="contained" sx={{ backgroundColor: '#7f99ad' }}>
+              <Button type="submit" variant="contained" sx={{ backgroundColor: '#12AD2B' }}>
                 Send to WhatsApp
               </Button>
             </form>

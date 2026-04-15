@@ -5,8 +5,8 @@
 
 .glass-panel {
   backdrop-filter: blur(14px);
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(179, 195, 208, 0.55);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(18, 173, 43, 0.3);
 }
 
 .page-bg {
@@ -21,13 +21,13 @@
   border-radius: 999px;
   filter: blur(80px);
   z-index: -1;
-  opacity: 0.55;
+  opacity: 0.5;
 }
 
 .page-bg::before {
   width: 300px;
   height: 300px;
-  background: #b3c3d0;
+  background: rgba(18, 173, 43, 0.5);
   top: -80px;
   right: -55px;
 }
@@ -35,19 +35,19 @@
 .page-bg::after {
   width: 360px;
   height: 360px;
-  background: #dfe8ef;
+  background: rgba(163, 232, 175, 0.8);
   left: -100px;
   bottom: -140px;
 }
 
 .soft-grid {
-  background-image: linear-gradient(rgba(179, 195, 208, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(179, 195, 208, 0.12) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(18, 173, 43, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 173, 43, 0.1) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
 .animated-shimmer {
-  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.65) 45%, rgba(255, 255, 255, 0) 70%);
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 20%, rgba(210, 255, 218, 0.55) 45%, rgba(255, 255, 255, 0) 70%);
   background-size: 220% 100%;
   animation: shimmer 7s linear infinite;
 }

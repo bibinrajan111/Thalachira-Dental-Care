@@ -8,7 +8,7 @@ const services = ['Smile Design', 'Implants', 'Pediatric Dental', 'Laser Gum Car
 
 function Footer() {
   return (
-    <footer className="mt-20 border-t border-dentalCloud bg-gradient-to-br from-dentalCloud/70 via-white to-dentalMist py-14">
+    <footer className="mt-20 border-t border-dentalCloud bg-gradient-to-br from-dentalCloud/70 via-white to-dentalMint py-14">
       <div className="page-shell grid gap-10 text-sm lg:grid-cols-12">
         <div className="lg:col-span-4">
           <h4 className="mb-3 text-xl font-semibold">Thalachira Dental Care</h4>

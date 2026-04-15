@@ -13,10 +13,10 @@ const metrics = [
 
 function HomeHero() {
   return (
-    <section className="home-panel page-bg soft-grid flex min-h-[calc(100vh-6rem)] items-center bg-gradient-to-br from-white via-dentalMist to-dentalCloud/55" id="home-hero">
+    <section className="home-panel page-bg soft-grid flex min-h-[calc(100vh-6rem)] items-center bg-gradient-to-br from-white via-dentalMint to-dentalCloud/55" id="home-hero">
       <div className="page-shell grid items-center gap-12 py-10 lg:grid-cols-2">
         <RevealOnScroll className="space-y-6">
-          <Chip label="Next-Gen Digital Dental Studio" sx={{ bgcolor: '#dce6ee', color: '#1f2d3d', fontWeight: 600 }} />
+          <Chip label="Next-Gen Digital Dental Studio" sx={{ bgcolor: '#daf3e0', color: '#0f2f17', fontWeight: 600 }} />
           <h1 className="text-4xl font-bold leading-tight md:text-6xl">
             Premium Dentistry,
             <span className="block bg-gradient-to-r from-dentalAccent to-dentalInk bg-clip-text text-transparent">Designed Around Comfort.</span>
@@ -25,10 +25,10 @@ function HomeHero() {
             We combine AI-assisted diagnostics, minimally invasive procedures, and hospitality-inspired care to help families maintain confident, healthy smiles for life.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button component={Link} to="/contact" variant="contained" size="large" sx={{ backgroundColor: '#7f99ad' }}>
+            <Button component={Link} to="/contact" variant="contained" size="large" sx={{ backgroundColor: '#12AD2B' }}>
               Book Your Visit
             </Button>
-            <Button component={Link} to="/services" variant="outlined" size="large" sx={{ borderColor: '#7f99ad', color: '#1f2d3d' }}>
+            <Button component={Link} to="/services" variant="outlined" size="large" sx={{ borderColor: '#12AD2B', color: '#0f2f17' }}>
               View Signature Services
             </Button>
           </div>

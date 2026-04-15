@@ -4,20 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        dentalBase: '#b3c3d0',
-        dentalMist: '#f7fafc',
-        dentalInk: '#1f2d3d',
-        dentalAccent: '#7f99ad',
-        dentalCloud: '#e7eef4',
+        dentalBase: '#12AD2B',
+        dentalMint: '#e9f9ec',
+        dentalInk: '#0f2f17',
+        dentalAccent: '#0a7f1f',
+        dentalCloud: '#d5f0db',
       },
       boxShadow: {
-        dental: '0 10px 30px rgba(51, 71, 91, 0.15)',
-        soft: '0 12px 38px rgba(90, 111, 131, 0.18)',
+        dental: '0 10px 30px rgba(8, 94, 31, 0.14)',
+        soft: '0 12px 38px rgba(9, 102, 35, 0.2)',
       },
       animation: {
         floaty: 'floaty 6s ease-in-out infinite',
         pulseSoft: 'pulseSoft 2.8s ease-in-out infinite',
         shimmer: 'shimmer 7s linear infinite',
+        bob: 'bob 5s ease-in-out infinite',
       },
       keyframes: {
         floaty: {
@@ -31,6 +32,10 @@ export default {
         shimmer: {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
+        },
+        bob: {
+          '0%, 100%': { transform: 'translate3d(0,0,0)' },
+          '50%': { transform: 'translate3d(0,-8px,0)' },
         },
       },
     },

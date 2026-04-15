@@ -1,21 +1,21 @@
 .services-bg {
-  background: linear-gradient(180deg, #edf3f8 0%, #f9fcff 42%, #ffffff 100%);
+  background: linear-gradient(180deg, #effcf1 0%, #f9fffa 42%, #ffffff 100%);
 }
 
 .services-title {
-  color: #273a4d;
+  color: #0f2f17;
 }
 
 .service-item {
-  border: 1px solid #d5e0e9;
-  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccefd3;
+  background: rgba(255, 255, 255, 0.93);
   border-radius: 1.2rem;
   padding: 1.25rem;
-  box-shadow: 0 8px 20px rgba(60, 82, 103, 0.09);
+  box-shadow: 0 8px 20px rgba(8, 94, 31, 0.1);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .service-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 18px 30px rgba(60, 82, 103, 0.14);
+  box-shadow: 0 18px 30px rgba(8, 94, 31, 0.14);
 }

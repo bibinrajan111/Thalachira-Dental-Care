@@ -30,7 +30,7 @@ function AboutPage() {
       <div className="page-shell space-y-12">
         <RevealOnScroll>
           <section className="about-banner rounded-[2rem] p-8 md:p-14">
-            <Chip label="Who We Are" sx={{ bgcolor: '#dbe4ec', color: '#1f2d3d', mb: 2, fontWeight: 600 }} />
+            <Chip label="Who We Are" sx={{ bgcolor: '#daf3e0', color: '#0f2f17', mb: 2, fontWeight: 600 }} />
             <h1 className="mb-4 text-3xl font-bold md:text-5xl">Compassionate Experts. Future-Ready Dentistry.</h1>
             <p className="max-w-3xl text-dentalInk/80">
               Thalachira Dental Care was founded to deliver world-class oral healthcare with a warm local touch. Our multidisciplinary team blends modern technology and empathetic communication so patients understand every step and feel confident throughout treatment.
@@ -81,7 +81,7 @@ function AboutPage() {
         </section>
 
         <RevealOnScroll className="text-center">
-          <Button component={Link} to="/contact" variant="contained" sx={{ backgroundColor: '#7f99ad' }}>
+          <Button component={Link} to="/contact" variant="contained" sx={{ backgroundColor: '#12AD2B' }}>
             Schedule a Clinic Tour
           </Button>
         </RevealOnScroll>

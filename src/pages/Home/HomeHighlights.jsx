@@ -33,7 +33,7 @@ const testimonials = [
 
 function HomeHighlights() {
   return (
-    <section className="home-panel flex min-h-[calc(100vh-6rem)] items-center bg-gradient-to-br from-dentalCloud/35 via-white to-dentalMist" id="home-highlights">
+    <section className="home-panel flex min-h-[calc(100vh-6rem)] items-center bg-gradient-to-br from-dentalCloud/35 via-white to-dentalMint" id="home-highlights">
       <div className="page-shell space-y-12 py-14">
         <RevealOnScroll>
           <h2 className="mb-3 text-3xl font-bold md:text-4xl">A Smarter Journey to Lifelong Oral Wellness</h2>

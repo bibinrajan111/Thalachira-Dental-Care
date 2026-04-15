@@ -1,0 +1,42 @@
+.service-detail-bg {
+  background: radial-gradient(circle at 20% 15%, rgba(18, 173, 43, 0.16) 0%, transparent 30%),
+    radial-gradient(circle at 80% 80%, rgba(116, 214, 132, 0.2) 0%, transparent 35%),
+    linear-gradient(180deg, #f8fffa 0%, #ffffff 100%);
+}
+
+.service-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(3px);
+  animation: bob 5s ease-in-out infinite;
+}
+
+.orb-one {
+  width: 140px;
+  height: 140px;
+  right: -25px;
+  top: -30px;
+  background: rgba(18, 173, 43, 0.18);
+}
+
+.orb-two {
+  width: 160px;
+  height: 160px;
+  left: -40px;
+  bottom: -60px;
+  animation-delay: 1.2s;
+  background: rgba(170, 238, 182, 0.25);
+}
+
+.service-card {
+  border: 1px solid #d5f0db;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 1.5rem;
+  box-shadow: 0 10px 26px rgba(8, 94, 31, 0.1);
+}
