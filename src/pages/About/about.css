@@ -1,0 +1,23 @@
+.about-page {
+  background: radial-gradient(circle at 15% 20%, #cffafe 0%, transparent 35%),
+    radial-gradient(circle at 85% 80%, #bfdbfe 0%, transparent 30%),
+    linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+}
+
+.about-banner {
+  background: linear-gradient(125deg, #dbeafe, #ecfeff);
+  border: 1px solid #93c5fd;
+}
+
+.about-card {
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 1px solid #bfdbfe;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+  transition: transform 0.25s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.02);
+}

@@ -1,0 +1,21 @@
+.services-bg {
+  background: linear-gradient(180deg, #e0f2fe 0%, #ecfeff 50%, #ffffff 100%);
+}
+
+.services-title {
+  color: #0c4a6e;
+}
+
+.service-item {
+  border: 1px solid #bae6fd;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-8px) rotate(-0.3deg);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.15);
+}

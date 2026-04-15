@@ -1,0 +1,41 @@
+.page-shell {
+  width: min(1320px, 94%);
+  margin-inline: auto;
+}
+
+.glass-panel {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.page-bg {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-bg::before,
+.page-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(70px);
+  z-index: -1;
+  opacity: 0.45;
+}
+
+.page-bg::before {
+  width: 280px;
+  height: 280px;
+  background: #7dd3fc;
+  top: -60px;
+  right: -40px;
+}
+
+.page-bg::after {
+  width: 320px;
+  height: 320px;
+  background: #93c5fd;
+  left: -80px;
+  bottom: -120px;
+}

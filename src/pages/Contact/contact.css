@@ -1,0 +1,10 @@
+.contact-bg {
+  background: radial-gradient(circle at 20% 20%, #dbeafe 0%, transparent 35%),
+    radial-gradient(circle at 90% 80%, #a5f3fc 0%, transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #e0f2fe 100%);
+}
+
+.contact-info {
+  border: 1px solid #93c5fd;
+  background-color: rgba(255, 255, 255, 0.8);
+}
