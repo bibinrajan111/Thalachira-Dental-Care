@@ -2,35 +2,39 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 const navItems = [
   { label: 'Home', to: '/' },
-  { label: 'About Us', to: '/about' },
+  { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' },
-  { label: 'Contact Us', to: '/contact' },
+  { label: 'Contact', to: '/contact' },
 ];
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-sky-200 bg-gradient-to-r from-sky-50/95 via-white/90 to-blue-50/95 backdrop-blur-md">
-      <div className="page-shell flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-blue-700 font-bold text-white shadow-dental">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-dentalCloud/80 bg-white/80 backdrop-blur-xl">
+      <div className="page-shell flex h-24 items-center justify-between">
+        <Link to="/" className="group flex items-center gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-dentalBase to-dentalAccent font-bold text-white shadow-soft transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-105">
             TDC
           </div>
-          <span className="text-base font-semibold md:text-lg">Thalachira Dental Care</span>
+          <div>
+            <p className="text-xs uppercase tracking-[0.2em] text-dentalAccent">Modern Dental Studio</p>
+            <span className="text-base font-semibold md:text-lg">Thalachira Dental Care</span>
+          </div>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-3 rounded-full border border-dentalCloud bg-white/80 px-3 py-2 shadow-sm md:flex">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                `rounded-full px-3 py-1 text-sm font-medium transition ${
-                  isActive ? 'bg-sky-100 text-sky-800' : 'text-dentalDark hover:bg-sky-50 hover:text-sky-700'
+                `rounded-full px-4 py-2 text-sm font-medium transition ${
+                  isActive ? 'bg-dentalBase text-dentalInk' : 'text-dentalInk/80 hover:bg-dentalCloud/70'
                 }`
               }
             >
@@ -39,10 +43,20 @@ function Header() {
           ))}
         </nav>
 
+        <div className="hidden items-center gap-2 md:flex">
+          <a
+            href="tel:+910000000000"
+            className="inline-flex items-center gap-2 rounded-full border border-dentalCloud bg-white px-4 py-2 text-sm font-medium text-dentalInk transition hover:border-dentalAccent hover:bg-dentalCloud/50"
+          >
+            <PhoneInTalkIcon fontSize="small" />
+            Book Now
+          </a>
+        </div>
+
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="rounded-lg border border-sky-200 p-2 text-dentalDark transition hover:bg-sky-100 md:hidden"
+          className="rounded-xl border border-dentalCloud bg-white p-2 text-dentalInk transition hover:bg-dentalCloud/50 md:hidden"
           aria-label="Toggle menu"
         >
           {isOpen ? <CloseIcon /> : <MenuIcon />}
@@ -50,8 +64,8 @@ function Header() {
       </div>
 
       <div
-        className={`overflow-hidden border-t border-sky-100 bg-white/95 transition-all duration-300 md:hidden ${
-          isOpen ? 'max-h-72 py-3' : 'max-h-0 py-0'
+        className={`overflow-hidden border-t border-dentalCloud/70 bg-white/95 transition-all duration-300 md:hidden ${
+          isOpen ? 'max-h-80 py-4' : 'max-h-0 py-0'
         }`}
       >
         <div className="page-shell flex flex-col gap-3">
@@ -61,14 +75,17 @@ function Header() {
               to={item.to}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `rounded-md px-3 py-2 text-sm font-medium transition ${
-                  isActive ? 'bg-sky-100 text-sky-700' : 'hover:bg-slate-100'
+                `rounded-lg px-3 py-2 text-sm font-medium transition ${
+                  isActive ? 'bg-dentalBase text-dentalInk' : 'hover:bg-dentalCloud/70'
                 }`
               }
             >
               {item.label}
             </NavLink>
           ))}
+          <a href="tel:+910000000000" className="rounded-lg border border-dentalCloud px-3 py-2 text-sm font-medium text-dentalInk">
+            Call Clinic
+          </a>
         </div>
       </div>
     </header>

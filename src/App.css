@@ -1,12 +1,12 @@
 .page-shell {
-  width: min(1320px, 94%);
+  width: min(1320px, 92%);
   margin-inline: auto;
 }
 
 .glass-panel {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(179, 195, 208, 0.55);
 }
 
 .page-bg {
@@ -19,23 +19,35 @@
   content: '';
   position: absolute;
   border-radius: 999px;
-  filter: blur(70px);
+  filter: blur(80px);
   z-index: -1;
-  opacity: 0.45;
+  opacity: 0.55;
 }
 
 .page-bg::before {
-  width: 280px;
-  height: 280px;
-  background: #7dd3fc;
-  top: -60px;
-  right: -40px;
+  width: 300px;
+  height: 300px;
+  background: #b3c3d0;
+  top: -80px;
+  right: -55px;
 }
 
 .page-bg::after {
-  width: 320px;
-  height: 320px;
-  background: #93c5fd;
-  left: -80px;
-  bottom: -120px;
+  width: 360px;
+  height: 360px;
+  background: #dfe8ef;
+  left: -100px;
+  bottom: -140px;
+}
+
+.soft-grid {
+  background-image: linear-gradient(rgba(179, 195, 208, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(179, 195, 208, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.animated-shimmer {
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.65) 45%, rgba(255, 255, 255, 0) 70%);
+  background-size: 220% 100%;
+  animation: shimmer 7s linear infinite;
 }
