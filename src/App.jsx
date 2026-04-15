@@ -5,18 +5,20 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 import HomePage from './pages/Home/HomePage';
 import AboutPage from './pages/About/AboutPage';
 import ServicesPage from './pages/Services/ServicesPage';
+import ServiceDetailPage from './pages/Services/ServiceDetailPage';
 import ContactPage from './pages/Contact/ContactPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-dentalDark">
+    <div className="min-h-screen bg-dentalMint text-dentalInk">
       <Header />
-      <main className="pt-20">
+      <main className="pt-24">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/:slug" element={<ServiceDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>

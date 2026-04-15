@@ -16,7 +16,7 @@ function ScrollToTopButton() {
     <button
       type="button"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-5 right-5 z-50 rounded-full bg-sky-700 p-3 text-white shadow-dental transition hover:bg-sky-600"
+      className="fixed bottom-5 right-5 z-50 rounded-full border border-white/70 bg-dentalAccent p-3 text-white shadow-soft transition hover:scale-105 hover:bg-dentalInk"
       aria-label="Scroll to top"
     >
       <KeyboardArrowUpIcon />
