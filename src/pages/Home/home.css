@@ -4,9 +4,19 @@
 
 .home-panel {
   scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
+.home-panel::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(179, 195, 208, 0.7), transparent);
+}
+
+@media (max-width: 900px) {
   .home-wrapper {
     scroll-snap-type: y proximity;
   }

@@ -1,10 +1,21 @@
 .contact-bg {
-  background: radial-gradient(circle at 20% 20%, #dbeafe 0%, transparent 35%),
-    radial-gradient(circle at 90% 80%, #a5f3fc 0%, transparent 30%),
-    linear-gradient(180deg, #ffffff 0%, #e0f2fe 100%);
+  background: radial-gradient(circle at 20% 20%, #e2eaf1 0%, transparent 35%),
+    radial-gradient(circle at 90% 80%, #d2dee8 0%, transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #edf3f8 100%);
 }
 
 .contact-info {
-  border: 1px solid #93c5fd;
-  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #d4e0e9;
+  background-color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 12px 30px rgba(70, 92, 114, 0.1);
+}
+
+.contact-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid #dde7ee;
+  background: #ffffff;
+  padding: 0.8rem;
+  border-radius: 0.9rem;
 }

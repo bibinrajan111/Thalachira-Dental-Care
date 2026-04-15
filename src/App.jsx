@@ -10,9 +10,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-dentalDark">
+    <div className="min-h-screen bg-dentalMist text-dentalInk">
       <Header />
-      <main className="pt-20">
+      <main className="pt-24">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
